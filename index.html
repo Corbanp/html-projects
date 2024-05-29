@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corban Paet Project Portfolio</title>
+    <meta name="description" content="Welcome to Corban Paet's project portfolio showcasing various coding projects.">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            max-width: min(90%, 1000px);
+            margin: 0 auto;
+        }
+
+
+        .project-link {
+            display: inline-block;
+            margin: 15px;
+            padding: 15px 25px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 18px;
+            transition: transform 0.3s, background-color 0.3s;
+        }
+
+        .project-link:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 30px;
+            color: #343a40;
+            margin-top: -20px;
+        }
+
+        /* New font for navigation links */
+        nav {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 15px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0056b3;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+            .project-link {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+            nav {
+                font-size: 16px;
+            }
+        }
+
+        /* Accessibility */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Corban Paet Project Portfolio</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="about.html">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <a class="project-link" href="calculator/calculator.html">Basic Calculator</a>
+        <a class="project-link" href="liquid/liquid.html">Random - Bubbles</a>
+        <a class="project-link" href="blog-writer/blog.html">Blog Writer</a>
+        <a class="project-link" href="personal-site/">Personal Site Prototype</a>
+        <a class="project-link" href="game-rip-offs/">Game Rip-offs</a>
+        <a class="project-link" href="login/index.php">Login</a>
+        <a class="project-link" href="to-do-list/to-do-list.html">To-do list</a>
+        <!-- Add more project links as needed -->
+    </div>
+</body>
+</html>

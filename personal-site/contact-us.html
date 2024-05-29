@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obstruction Studio</title>
+  </head>
+  <body>
+    <textarea id="message-to-us"></textarea>
+    <button onclick="sendMessage()">Send</button>
+  </body>
+
+  <script>
+    function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/1041233573308538931/lZroV1u_C77zCCReWcdCPXmcSnEDgVAGqPHnt2Lx-4jSTlryKt4ap2ybbK0mG-Is2V_P");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+        username: "",
+        avatar_url: "",
+        content: document.getElementById("message-to-us"),
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
+</html>
