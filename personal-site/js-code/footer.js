@@ -1,8 +1,7 @@
-// footer.js
-document.addEventListener("DOMContentLoaded", function() {
-    fetch("footer.html")
-        .then(response => response.text())
-        .then(html => {
-            document.querySelector("footer").innerHTML = html;
-        });
-});
+// footerLoader.js
+function includeFooter() {
+    var footer = document.createElement('footer');
+    footer.innerHTML = '<object type="text/html" data="footer.html" ></object>';
+    document.body.appendChild(footer);
+}
+includeFooter();
